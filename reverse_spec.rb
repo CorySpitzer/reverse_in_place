@@ -11,6 +11,14 @@ describe '#reverse' do
   end
 
   it 'handles double-entry array' do
-    expect(reverse [3, 4]).to eq [4,3]
+    expect(reverse [3, 4]).to eq [4, 3]
+  end
+
+  it 'handles a larger even array' do
+    expect(reverse [3, 4, 5, 6]).to eq [6, 5, 4, 3]
+  end
+
+  it 'handles a larger odd array' do
+    expect(reverse [3, 4, 5, 6, 7]).to eq [7, 6, 5, 4, 3]
   end
 end
